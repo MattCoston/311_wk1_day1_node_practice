@@ -9,18 +9,14 @@ const isEven = (num) => {
   }
 
 }
-log(isEven(2))
+
 const sum = (arr) => {
   // write code for numbers.sum
-  let added;
-  let i;
-  for(i in arr){
-    added += arr;
-  }
-  return added
+  return arr.reduce((accumulator, currentValue) =>{
+    return accumulator + currentValue
+  }, 0)
 }
 
-console.log(sum([1,2]))
 const comboSum = (arr, sum) => {
   // write code for numbers.comboSum
 
